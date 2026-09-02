@@ -1,922 +1,723 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
 :root {
-    --background: #0d0f18;
-    --second-background: #0b0d16;
-    --border: #0f111a;
-    --button-background: rgba(134, 170, 236, 0.15);
-    --fore: #a5b6cf;
-    --accent: #86aaec;
+  --gnome-convert-icon-to-symbolic-hack-filter: invert(100%) sepia(100%)
+    grayscale(100%) brightness(200%) brightness(85%);
+  scrollbar-color: #0d0f18 #0b0d16;
 }
 
 @-moz-document domain("roblox.com") {
-    body {
-        background-color: var(--second-background) !important;
-        color: var(--fore) !important;
-    }
-    @import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-    * {
-        font-family: "Space Mono", sans-serif !important;
-    }
-    .gotham-font div {
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 1.4em;
-        border-radius: 6px;
-    }
-    .dark-theme .content {
-        background-color: var(--second-background) !important;
-        color: var(--fore) !important;
-    }
-    .dark-theme {
-        background-color: var(--second-background) !important;
-    }
-    .dark-theme .section-content {
-        border: 1px solid var(--border) !important;
-        background-color: var(--background) !important;
-        color: #fff;
-    }
-    .btr-game-button {
-        background-color: #1e2637 !important;
-        border-color: transparent !important;
-        color: var(--accent) !important;
-    }
-    .dark-theme .btn-control-sm {
-        background-color: var(--border) !important;
-        border-color: transparent !important;
-        color: var(--fore) !important;
-        border-radius: 8px;
-    }
-    .dark-theme .rbx-header {
-        background-color: #0d0f18d6 !important;
-        border: solid var(--border) !important;
-        border-width: 1px !important;
-        max-width: 900px !important;
-        margin-right: auto !important;
-        margin-left: auto !important;
-    }
-    .dark-theme .asset-thumb-container {
-        background-color: var(--border) !important;
-    }
-    .dark-theme .rbx-tabs-horizontal .rbx-tab .rbx-tab-heading.active {
-        color: var(--accent) !important;
-        box-shadow: inset 0 -4px 0 0 #86aaec !important;
-    }
-    .chat-main {
-        box-shadow: none !important;
-    }
-    .dark-theme .chat-main {
-        background-color: var(--background) !important;
-    }
-    .dark-theme .section-content {
-        color: var(--fore) !important;
-    }
-    .dark-theme .text,
-    .dark-theme .text-date-hint,
-    .dark-theme .text-default,
-    .dark-theme .text-description,
-    .dark-theme .text-footer,
-    .dark-theme .text-info,
-    .dark-theme .text-label,
-    .dark-theme .text-secondary,
-    .dark-theme p {
-        color: var(--fore) !important;
-    }
-    .dark-theme .abp .BadAdButton:hover,
-    .dark-theme .text-alert,
-    .dark-theme .text-error,
-    .light-theme .abp .BadAdButton:hover,
-    .light-theme .text-alert,
-    .light-theme .text-error {
-        color: #dd6777 !important;
-    }
-    .dark-theme .chat-search {
-        background-color: rgba(255, 0, 0, 0.7);
-        border-color: hsla(0, 0%, 100%, 0.2);
-        border-bottom-color: rgba(255, 255, 255, 0.2);
-        color: #bdbebe;
-        border-radius: 0px;
-    }
-    .navbar-left {
-        float: right !important;
-    }
-    .col-lg-3 {
-        width: 16% !important;
-    }
-    .dark-theme .rbx-tabs-vertical .category-tabs .menu-vertical {
-        background-color: var(--background) !important;
-        color: #fff;
-        border-radius: 6px !important;
-    }
-    .dark-theme .btn-growth-md {
-        background-color: #90ceaa !important;
-        border-color: #99d2b3 !important;
-        color: var(--background) !important;
-        border-radius: 8px !important;
-    }
-    .dark-theme .item-card-container .item-card-thumb-container {
-        background-color: var(--border) !important;
-    }
-    .icon-online {
-        background-color: var(--accent) !important;
-        border-radius: 5px !important;
-    }
-    .icon-game {
-        background-color: #90ceaa !important;
-        border-radius: 69px !important;
-    }
-    .icon-studio {
-        background-color: #c296eb !important;
-        border-radius: 69px !important;
-    }
-    .icon-default-friendstatus,
-    .icon-game,
-    .icon-online,
-    .icon-studio {
-        background-image: none !important;
-    }
-    .dark-theme .friends-content .avatar-card-content {
-        background-color: var(--border) !important;
-    }
-    .dark-theme .avatar-card-container.disabled {
-        background-color: var(--background) !important;
-    }
-    .dark-theme .rbx-tab .rbx-tab-heading {
-        background-color: var(--border) !important;
-    }
-    .dark-theme .rbx-tabs-horizontal .nav-tabs {
-        background-color: var(--background) !important;
-    }
-    .dark-theme .input-field {
-        background-color: transparent !important;
-        border-color: #30363d !important;
-        color: #6e7681 !important;
-        border-radius: 6px !important;
-    }
-    .dark-theme .btn-toggle {
-        background-color: var(--fore) !important;
-        color: #bdbebe;
-    }
-    .dark-theme .btn-toggle.on {
-        background-color: var(--accent) !important;
-        border-radius: 2px !important;
-    }
-    .dark-theme .btn-primary-md {
-        background-color: var(--accent) !important;
-        border-color: var(--accent) !important;
-        color: var(--border) !important;
-        border-radius: 6px !important;
-    }
-    .btn-toggle .toggle-flip {
-        background-color: var(--second-background) !important;
-        border-radius: 16px !important;
-    }
-    .dark-theme .container-footer {
-        background-color: var(--second-background) !important;
-    }
-    .dark-theme .menu-vertical {
-        background-color: var(--background) !important;
-    }
-    .dark-theme .container-empty,
-    .dark-theme .section-content-off {
-        background-color: var(--background) !important;
-        color: #616b7b !important;
-    }
-    .btr-pager-holder input.btr-pager-cur {
-        background-color: rgba(17, 18, 20, 0.8) !important;
-        color: var(--accent) !important;
-        border: 1px solid var(--accent) !important;
-        border-radius: 16px !important;
-    }
-    .btr-pager-holder * {
-        background-color: #1e2637 !important;
-        border-radius: 16px !important;
-    }
-    .dark-theme .dropdown-menu {
-        background-color: var(--background) !important;
-        border: 1px solid var(--border) !important;
-    }
-    dark-theme .popover.bottom > .arrow,
-    .dark-theme .popover.bottom > .arrow::after {
-        border-bottom-color: transparent !important;
-    }
-    .dark-theme .avatar-container .avatar-card-image,
-    .dark-theme .avatar-container img {
-        background-color: var(--border) !important;
-    }
-    .dark-theme .border,
-    .dark-theme .border-bottom,
-    .dark-theme .border-left,
-    .dark-theme .border-right,
-    .dark-theme .border-top {
-        border-color: transparent !important;
-    }
-    .profile-avatar-left .enable-three-dee {
-        background-color: var(--accent) !important;
-        border-color: var(--accent) !important;
-        color: var(--border) !important;
-        border-radius: 6px !important;
-        border: none !important;
-        top: 5px !important;
-        right: 5px !important;
-    }
-    #games-carousel-page {
-        width: 1075px !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
-    }
-    .no-gutter-ads.logged-in .content {
-        width: 1075px !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
-    }
-    .dark-theme .remove-panel {
-        padding: 15px !important;
-    }
-    .container-main
-        .catalog-full-screen
-        .catalog-results
-        .item-cards-stackable
-        .item-card,
-    .container-main
-        .splash.catalog-full-screen
-        .catalog-results
-        .item-cards-stackable
-        .item-card {
-        width: 19% !important;
-        min-width: auto;
-    }
-    .dark-theme .avatar-card-btns {
-        background-color: var(--background) !important;
-    }
-    .dark-theme .avatar-card-btns .accept-friend {
-        background-color: #90ceaa !important;
-        border-color: #99d2b3 !important;
-        color: var(--background) !important;
-        border-radius: 6px !important;
-    }
-    .dark-theme .btn-secondary-md {
-        background-color: var(--border) !important;
-        border-color: transparent !important;
-        color: var(--fore) !important;
-        border-radius: 6px !important;
-    }
-    .container-buttons .profile-view-selector {
-        background-color: var(--button-background) !important;
-        border: none !important;
-        padding: 2px 15px !important;
-    }
-    .dark-theme .game-social-links > .btn-secondary-lg {
-        color: var(--fore) !important;
-        border: 1px solid var(--border) !important;
-        background-color: var(--background) !important;
-        border-radius: 6px !important;
-    }
-    .dark-theme .layer {
-        border: 1px solid var(--border) !important;
-        background-color: var(--background) !important;
-    }
-    .dark-theme .btn-secondary-xs {
-        background-color: var(--button-background);
-        border-color: transparent !important;
-        color: var(--accent) !important;
-    }
-    .btr-profile .btr-games-list .btr-game-thumb-container {
-        margin-top: 6px !important;
-    }
-    .btr-profile .btr-games-list .btr-game-icon {
-        border: none !important;
-    }
-    .btr-profile .btr-games-list .btr-game-thumb {
-        border-radius: 6px !important;
-    }
-    .dark-theme .stack .card-list .card-item {
-        background-color: var(--button-background) !important;
-        border-radius: 6px !important;
-    }
-    .dark-theme.btr-gamedetails .server-list-section#rbx-private-running-games .card-list > li:not(:first-child) {
-        border-top: transparent !important;
-    }
-    .dark-theme .horizontal-scroller .scroller .spacer {
-        background-color: var(--second-background) !important;
-    }
-    .dark-theme .scroller {
-        background-color: var(--background) !important;
-    }
-    .dark-theme .table {
-        border: 1px solid var(--border) !important;
-        background-color: var(--background) !important;
-        border-radius: 6px !important;
-        color: var(--fore) !important;
-    }
-    .profile-about .profile-social-networks .profile-social {
-        filter: var(--gnome-convert-icon-to-symbolic-hack-filter);
-        border-radius: 6px !important;
-    }
-    .dark-theme .btn-primary-lg {
-        background-color: #90ceaa !important;
-        border-color: #99d2b3 !important;
-        color: var(--background) !important;
-        border-radius: 6px !important;
-    }
-    .dark-theme .rbx-left-col {
-        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
-        border: 1px solid var(--border) !important;
-        background-color: var(--background) !important;
-        border-radius: 6px !important;
-        margin-left: 15px !important;
-    }
-    .dark-theme .menu-vertical .menu-option.active {
-        color: var(--fore) !important;
-        background-color: transparent;
-        box-shadow: inset 4px 0 0 0 #c296eb !important;
-    }
-    .rbx-left-col li {
-        margin: 8px 0 !important;
-    }
-    .rbx-left-col ul {
-        padding: 5px 0 0 0px !important;
-    }
-    .rbx-left-col .rbx-scrollbar .left-col-list {
-        width: 125px;
-    }
-    .dark-theme .menu-vertical .menu-option {
-        color: #616b7b !important;
-    }
-    .dark-theme .rbx-left-col li .text-nav:active,
-    .dark-theme .rbx-left-col li .text-nav:link,
-    .dark-theme .rbx-left-col li .text-nav:visited {
-        display: inline-grid !important;
-        justify-items: center !important;
-        align-items: center !important;
-        width: 100% !important;
-    }
-    .dark-theme .profile-avatar-right .profile-avatar-mask {
-        border: 1px solid var(--border) !important;
-        background-color: var(--background) !important;
-    }
-    .profile-avatar-right .profile-avatar-mask {
-        padding: 20px 20px !important;
-    }
-    .profile-accoutrements-container
-        .profile-accoutrements-slider
-        .accoutrement-items-container {
-        width: 100%;
-    }
-    #profile-current-wearing-avatar .thumbnail-2d-container {
-        background-color: transparent !important;
-    }
-    .btr-profile .profile-stats-container {
-        border-top: 1px solid var(--border) !important;
-        border-bottom: 1px solid var(--border) !important;
-        margin-top: 10px;
-    }
-    .btr-profile .btr-header-status-parent {
-        display: block !important;
-        position: absolute !important;
-    }
-    .dark-theme .avatar-card-container {
-        background-color: var(--background) !important;
-        color: var(--fore) !important;
-    }
-    .dark-theme .stack .stack-list .stack-row {
-        border: 1px solid var(--border) !important;
-        background-color: var(--background) !important;
-        color: var(--fore) !important;
-        border-radius: 6px !important;
-    }
-    .dark-theme .thumbnail-2d-container {
-        background-color: var(--background) !important;
-    }
-    .dark-theme .catalog-content .search-options .category-section,
-    .dark-theme .catalog-content .search-options .filters-section {
-        border-bottom: 1px solid var(--border) !important;
-    }
-    .jss3 {
-        background-color: var(--second-background) !important;
-    }
-    .dark-theme
-        .slide-switcher
-        .slide-item-container
-        .slide-item-container-right {
-        color: var(--fore) !important;
-        border: 1px solid var(--border) !important;
-        background-color: var(--background) !important;
-    }
-    .dark-theme
-        .slide-switcher
-        .slide-item-container
-        .slide-item-container-left {
-        background: transparent !important;
-    }
-    .jss459 {
-        border: 1px solid var(--border) !important;
-        background-color: var(--background) !important;
-    }
-    .jss205 {
-        max-width: 1550px !important;
-        margin-right: auto !important;
-        margin-left: auto !important;
-    }
-    .jss202 {
-        border: 1px solid var(--border) !important;
-        background-color: var(--background) !important;
-        border-bottom-left-radius: 6px !important;
-        border-bottom-right-radius: 6px !important;
-    }
-    .hlist .list-item a {
-        display: grid !important;
-    }
-    .dark-theme .thumbnail-2d-container {
-        align-self: center;
-    }
-    .game-cards {
-        white-space: nowrap;
-        padding: 15px !important;
-        border: 1px solid var(--border) !important;
-        background-color: var(--background) !important;
-        border-radius: 6px !important;
-        display: flex !important;
-        justify-content: space-between !important;
-    }
-    .dark-theme .slide-switcher.groups {
-        background-color: transparent !important;
-    }
-    .dark-theme .game-card-container .game-card-name {
-        width: auto !important;
-    }
-    .dark-theme .game-cards .game-card,
-    .light-theme .game-cards .game-card {
-        width: auto !important;
-    }
-    .game-cards .game-card {
-        padding: 0 7px 0 0 !important;
-    }
-    .rbx-left-col li button.text-nav {
-        display: block !important;
-    }
-    .rbx-left-col li .text-nav .font-header-2 {
-        display: block !important;
-        margin: 3px 0 3px 0 !important;
-        text-overflow: ellipsis !important;
-        width: 125px !important;
-        text-align: center !important;
-    }
-    .dark-theme .dialogs .dialog-container .dialog-header {
-        border: 1px solid var(--border) !important;
-        background-color: var(--background) !important;
-    }
-    .dark-theme .chat-container .chat-main .chat-header {
-        border: 1px solid var(--border) !important;
-        background-color: var(--background) !important;
-    }
-    .dark-theme .dialogs .dialog-container .dialog-body {
-        background-color: transparent !important;
-    }
-    .dark-theme .dialog-container {
-        background-color: var(--background) !important;
-    }
-    .dark-theme .dialog-container .dialog-input-container .dialog-input {
-        background-color: var(--second-background) !important;
-        border-color: transparent !important;
-        color: var(--fore) !important;
-        border-radius: 6px !important;
-    }
-    .dark-theme .vlist .list-item {
-        border-color: transparent !important;
-    }
-    .section-content .badge-list {
-        display: flex !important;
-        justify-content: space-between !important;
-    }
-    .rbx-header .icon-logo {
-        display: none !important;
-    }
-    .rbx-header .rbx-navbar-header {
-        display: none !important;
-    }
-    #notifications-bell-badge.bell-red-badge {
-        background-color: var(--accent) !important;
-        color: var(--border) !important;
-    }
-    .dark-theme .notification,
-    .dark-theme .notification-blue,Update roblox.css
-    .dark-theme .notification-red {
-        background-color: var(--accent) !important;
-        color: var(--border) !important;
-    }
-    .dark-theme
-        .dialogs
-        .dialog-container
-        .dialog-message-container
-        .dialog-message {
-        background-color: var(--second-background) !important;
-        border: 1px solid var(--border) !important;
-        color: var(--fore) !important;
-    }
-    .dark-theme .catalog-container .sticky .search-bars {
-        background-color: var(--background) !important;
-        border: 1px solid var(--background) !important;
-        padding: 10px !important;
-    }
-    .dark-theme .catalog-container .sticky .topic-container {
-        background-color: transparent !important;
-        padding-top: 0 !important;
-        height: auto !important;
-    }
-    .dark-theme .topic-container .topic-carousel .unselected-topic {
-        background-color: #1e2637 !important;
-        color: var(--accent) !important;
-    }
-    .group-details .group-wall {
-        margin-bottom: 100px !important;
-    }
-    .dark-theme
-        .dialogs
-        .dialog-container
-        .dialog-message-container
-        .link-card-container.dialog-triangle::after,
-    .dark-theme
-        .dialogs
-        .dialog-container
-        .dialog-message-container
-        .link-card-container.dialog-triangle::before,
-    .dark-theme
-        .dialogs
-        .dialog-container
-        .dialog-message-container.message-cluster-master
-        .dialog-triangle.message-is-sending::after,
-    .dark-theme
-        .dialogs
-        .dialog-container
-        .dialog-message-container.message-cluster-master
-        .dialog-triangle.message-is-sending::before,
-    .dark-theme
-        .dialogs
-        .dialog-container
-        .dialog-message-container.message-cluster-master
-        .dialog-triangle::after,
-    .dark-theme
-        .dialogs
-        .dialog-container
-        .dialog-message-container.message-cluster-master
-        .dialog-triangle::before {
-        border-radius: 15px !important;
-        border-top-right-radius: 4px !important;
-        border-color: transparent !important;
-    }
-    .dark-theme .text-link,
-    .dark-theme .text-link.small,
-    .dark-theme .text-link.small:active,
-    .dark-theme .text-link.small:link,
-    .dark-theme .text-link.small:visited,
-    .dark-theme .text-link.xsmall,
-    .dark-theme .text-link.xsmall:active,
-    .dark-theme .text-link.xsmall:link,
-    .dark-theme .text-link.xsmall:visited,
-    .dark-theme .text-link.xxsmall,
-    .dark-theme .text-link.xxsmall:active,
-    .dark-theme .text-link.xxsmall:link,
-    .dark-theme .text-link.xxsmall:visited,
-    .dark-theme .text-link:active,
-    .dark-theme .text-link:hover,
-    .dark-theme .text-link:link,
-    .dark-theme .text-link:visited,
-    .dark-theme .text-name,
-    .dark-theme .text-name.small,
-    .dark-theme .text-name.small:active,
-    .dark-theme .text-name.small:link,
-    .dark-theme .text-name.small:visited,
-    .dark-theme .text-name.xsmall,
-    .dark-theme .text-name.xsmall:active,
-    .dark-theme .text-name.xsmall:link,
-    .dark-theme .text-name.xsmall:visited,
-    .dark-theme .text-name.xxsmall,
-    .dark-theme .text-name.xxsmall:active,
-    .dark-theme .text-name.xxsmall:link,
-    .dark-theme .text-name.xxsmall:visited,
-    .dark-theme .text-name:active,
-    .dark-theme .text-name:hover,
-    .dark-theme .text-name:link,
-    .dark-theme .text-name:visited,
-    .dark-theme .vlist .list-item .list-body .list-content a,
-    .dark-theme .vlist .list-item .list-body .list-content a.small,
-    .dark-theme .vlist .list-item .list-body .list-content a.small:active,
-    .dark-theme .vlist .list-item .list-body .list-content a.small:link,
-    .dark-theme .vlist .list-item .list-body .list-content a.small:visited,
-    .dark-theme .vlist .list-item .list-body .list-content a.xsmall,
-    .dark-theme .vlist .list-item .list-body .list-content a.xsmall:active,
-    .dark-theme .vlist .list-item .list-body .list-content a.xsmall:link,
-    .dark-theme .vlist .list-item .list-body .list-content a.xsmall:visited,
-    .dark-theme .vlist .list-item .list-body .list-content a.xxsmall,
-    .dark-theme .vlist .list-item .list-body .list-content a.xxsmall:active,
-    .dark-theme .vlist .list-item .list-body .list-content a.xxsmall:link,
-    .dark-theme .vlist .list-item .list-body .list-content a.xxsmall:visited,
-    .dark-theme .vlist .list-item .list-body .list-content a:active,
-    .dark-theme .vlist .list-item .list-body .list-content a:hover,
-    .dark-theme .vlist .list-item .list-body .list-content a:link,
-    .dark-theme .vlist .list-item .list-body .list-content a:visited,
-    .vlist .list-item .list-body .list-content .dark-theme a,
-    .vlist .list-item .list-body .list-content .dark-theme a.small,
-    .vlist .list-item .list-body .list-content .dark-theme a.small:active,
-    .vlist .list-item .list-body .list-content .dark-theme a.small:link,
-    .vlist .list-item .list-body .list-content .dark-theme a.small:visited,
-    .vlist .list-item .list-body .list-content .dark-theme a.xsmall,
-    .vlist .list-item .list-body .list-content .dark-theme a.xsmall:active,
-    .vlist .list-item .list-body .list-content .dark-theme a.xsmall:link,
-    .vlist .list-item .list-body .list-content .dark-theme a.xsmall:visited,
-    .vlist .list-item .list-body .list-content .dark-theme a.xxsmall,
-    .vlist .list-item .list-body .list-content .dark-theme a.xxsmall:active,
-    .vlist .list-item .list-body .list-content .dark-theme a.xxsmall:link,
-    .vlist .list-item .list-body .list-content .dark-theme a.xxsmall:visited,
-    .vlist .list-item .list-body .list-content .dark-theme a:active,
-    .vlist .list-item .list-body .list-content .dark-theme a:hover,
-    .vlist .list-item .list-body .list-content .dark-theme a:link,
-    .vlist .list-item .list-body .list-content .dark-theme a:visited {
-        color: var(--fore) !important;
-    }
-    .no-gutter-ads .rbx-left-col .rbx-scrollbar,
-    .rbx-left-col .rbx-scrollbar {
-        width: 125px !important;
-    }
-    .no-gutter-ads .rbx-left-col,
-    .rbx-left-col {
-        width: 125px !important;
-    }
-    .rbx-left-col .rbx-scrollbar .left-col-list {
-        width: 125px !important;
-    }
-    .dark-theme .people-list {
-        height: auto !important;
-        max-height: none !important;
-    }
-    .btr-profile-groups .game-card {
-        width: auto !important;
-    }
-    .game-home-page-container::after,
-    .game-home-page-container::before {
-        margin-top: 45px !important;
-    }
-    .dark-theme .game-card-container .game-card-name-secondary {
-        width: 140px !important;
-    }
-    .hlist {
-        min-height: auto !important;
-    }
-    .friend-list .friend .friend-name,
-    .people-list .friend .friend-name {
-        width: auto !important;
-    }
-    .btr-profile #roblox-badges-container .badge-list > .list-item .item-name {
-        width: 99.9px !important;
-        text-align: center !important;
-    }
-    .profile-container .asset-item .item-name {
-        margin: 0px !important;
-    }
-    .people-list-container {
-        height: auto !important;
-    }
-    .css-t4xz1v-header {
-        margin: auto;
-        width: 1550px;
-    }
-    #header {
-        margin-top: 10px !important;
-        border-radius: 6px !important;
-        padding: 0 10px 0 10px !important;
-        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3) !important;
-        backdrop-filter: blur(10px) !important;
-    }
-    .dark-theme .rbx-header .navbar-search .new-dropdown-menu {
-        width: 300px !important;
-    }
-    .dark-theme.btr-profile .btr-games-list .btr-game-button {
-        border-radius: 6px !important;
-    }
-    .btr-pager-cur {
-        background: transparent !important;
-    }
-    .enable-three-dee .btn-control .btn-control-lg .btn--width {
-        background: transparent !important;
-    }
-    .dark-theme .rbx-header .navbar-search {
-        background: transparent !important;
-    }
-    .btn-secondary-xs btn-more see-all-link-icon ng-binding {
-        background: rgba(134, 170, 236, 0.15) !important;
-        color: var(--accent) !important;
-        padding: 4px 18px 4px 4px !important;
-        border-radius: 6px !important;
-    }
-    .dark-theme .game-card-container .game-card-thumb-container {
-        background-color: var(--border) !important;
-    }
-    .dark-theme .btr-profile-groups .game-card-thumb-container {
-        border-bottom-color: transparent !important;
-    }
-    .dark-theme .btr-profile-favorites .game-card-thumb-container {
-        border-bottom-color: transparent !important;
-    }
-    .social-link-icon {
-        border-radius: 6px !important;
-    }
-    .section-content {
-        border-radius: 6px !important;
-    }
-    .thumbnail-2d-container img {
-        border-radius: 6px !important;
-    }
+  :root {
+    --dark-mode-content-emphasis: #a5b6cf !important;
+    --dark-mode-shift-200: #1e2637 !important;
+    --dark-mode-shift-300: #1e2637 !important;
+    --dark-mode-surface-100: #0d0f18 !important;
+  }
 
-    .dark-theme .text-link,
-    .dark-theme .text-link.small,
-    .dark-theme .text-link.small:active,
-    .dark-theme .text-link.small:link,
-    .dark-theme .text-link.small:visited,
-    .dark-theme .text-link.xsmall,
-    .dark-theme .text-link.xsmall:active,
-    .dark-theme .text-link.xsmall:link,
-    .dark-theme .text-link.xsmall:visited,
-    .dark-theme .text-link.xxsmall,
-    .dark-theme .text-link.xxsmall:active,
-    .dark-theme .text-link.xxsmall:link,
-    .dark-theme .text-link.xxsmall:visited,
-    .dark-theme .text-link:active,
-    .dark-theme .text-link:hover,
-    .dark-theme .text-link:link,
-    .dark-theme .text-link:visited,
-    .dark-theme .text-name,
-    .dark-theme .text-name.small,
-    .dark-theme .text-name.small:active,
-    .dark-theme .text-name.small:link,
-    .dark-theme .text-name.small:visited,
-    .dark-theme .text-name.xsmall,
-    .dark-theme .text-name.xsmall:active,
-    .dark-theme .text-name.xsmall:link,
-    .dark-theme .text-name.xsmall:visited,
-    .dark-theme .text-name.xxsmall,
-    .dark-theme .text-name.xxsmall:active,
-    .dark-theme .text-name.xxsmall:link,
-    .dark-theme .text-name.xxsmall:visited,
-    .dark-theme .text-name:active,
-    .dark-theme .text-name:hover,
-    .dark-theme .text-name:link,
-    .dark-theme .text-name:visited,
-    .dark-theme .vlist .list-item .list-body .list-content a,
-    .dark-theme .vlist .list-item .list-body .list-content a.small,
-    .dark-theme .vlist .list-item .list-body .list-content a.small:active,
-    .dark-theme .vlist .list-item .list-body .list-content a.small:link,
-    .dark-theme .vlist .list-item .list-body .list-content a.small:visited,
-    .dark-theme .vlist .list-item .list-body .list-content a.xsmall,
-    .dark-theme .vlist .list-item .list-body .list-content a.xsmall:active,
-    .dark-theme .vlist .list-item .list-body .list-content a.xsmall:link,
-    .dark-theme .vlist .list-item .list-body .list-content a.xsmall:visited,
-    .dark-theme .vlist .list-item .list-body .list-content a.xxsmall,
-    .dark-theme .vlist .list-item .list-body .list-content a.xxsmall:active,
-    .dark-theme .vlist .list-item .list-body .list-content a.xxsmall:link,
-    .dark-theme .vlist .list-item .list-body .list-content a.xxsmall:visited,
-    .dark-theme .vlist .list-item .list-body .list-content a:active,
-    .dark-theme .vlist .list-item .list-body .list-content a:hover,
-    .dark-theme .vlist .list-item .list-body .list-content a:link,
-    .dark-theme .vlist .list-item .list-body .list-content a:visited,
-    .vlist .list-item .list-body .list-content .dark-theme a,
-    .vlist .list-item .list-body .list-content .dark-theme a.small,
-    .vlist .list-item .list-body .list-content .dark-theme a.small:active,
-    .vlist .list-item .list-body .list-content .dark-theme a.small:link,
-    .vlist .list-item .list-body .list-content .dark-theme a.small:visited,
-    .vlist .list-item .list-body .list-content .dark-theme a.xsmall,
-    .vlist .list-item .list-body .list-content .dark-theme a.xsmall:active,
-    .vlist .list-item .list-body .list-content .dark-theme a.xsmall:link,
-    .vlist .list-item .list-body .list-content .dark-theme a.xsmall:visited,
-    .vlist .list-item .list-body .list-content .dark-theme a.xxsmall,
-    .vlist .list-item .list-body .list-content .dark-theme a.xxsmall:active,
-    .vlist .list-item .list-body .list-content .dark-theme a.xxsmall:link,
-    .vlist .list-item .list-body .list-content .dark-theme a.xxsmall:visited,
-    .vlist .list-item .list-body .list-content .dark-theme a:active,
-    .vlist .list-item .list-body .list-content .dark-theme a:hover,
-    .vlist .list-item .list-body .list-content .dark-theme a:link,
-    .vlist .list-item .list-body .list-content .dark-theme a:visited {
-        color: var(--fore) !important;
-    }
-    .avatar-card-fullbody .avatar-card-image,
-    .avatar-card-fullbody .avatar-card-link,
-    .avatar .avatar-card-image,
-    .avatar .avatar-card-link {
-        border-radius: 100%;
-    }
-    .avatar-card-fullbody .avatar-card-image,
-    .avatar-card-fullbody .avatar-card-link,
-    .avatar .avatar-card-image,
-    .avatar .avatar-card-link {
-        border-radius: 100%;
-    }
-    .btn-common-play-game-lg span[class^="icon-"],
-    .btn-common-play-game-lg span[class^="icon-"]:hover,
-    a.btn-common-play-game-lg span[class^="icon-"],
-    a.btn-common-play-game-lg span[class^="icon-"]:hover,
-    button.btn-common-play-game-lg span[class^="icon-"],
-    button.btn-common-play-game-lg span[class^="icon-"]:hover {
-        filter: brightness(0) saturate(100%) invert(5%) sepia(10%)
-            saturate(2493%) hue-rotate(191deg) brightness(99%) contrast(96%) !important;
-    }
-    .dark-theme .icon-additem,
-    .dark-theme .icon-arrow-right-blue,
-    .dark-theme .icon-audio,
-    .dark-theme .icon-back,
-    .dark-theme .icon-bigplay,
-    .dark-theme .icon-bigplay-fill,
-    .dark-theme .icon-bigstop,
-    .dark-theme .icon-bigstop-fill,
-    .dark-theme .icon-brokenpage,
-    .dark-theme .icon-carousel-left,
-    .dark-theme .icon-carousel-right,
-    .dark-theme .icon-chat-gray,
-    .dark-theme .icon-check-selection,
-    .dark-theme .icon-checkmark,
-    .dark-theme .icon-checkmark-blue,
-    .dark-theme .icon-checkmark-on,
-    .dark-theme .icon-checkmark-white,
-    .dark-theme .icon-checkmark-white-bold,
-    .dark-theme .icon-clock,
-    .dark-theme .icon-close,
-    .dark-theme .icon-close-white,
-    .dark-theme .icon-copy,
-    .dark-theme .icon-default-generic,
-    .dark-theme .icon-down,
-    .dark-theme .icon-edit,
-    .dark-theme .icon-female,
-    .dark-theme .icon-female-white,
-    .dark-theme .icon-first-gray,
-    .dark-theme .icon-first-page,
-    .dark-theme .icon-games-carousel-left,
-    .dark-theme .icon-games-carousel-right,
-    .dark-theme .icon-globe,
-    .dark-theme .icon-grid,
-    .dark-theme .icon-home,
-    .dark-theme .icon-inactive,
-    .dark-theme .icon-last-gray,
-    .dark-theme .icon-last-page,
-    .dark-theme .icon-left,
-    .dark-theme .icon-left-gray,
-    .dark-theme .icon-locked,
-    .dark-theme .icon-logo-apple,
-    .dark-theme .icon-logo-win,
-    .dark-theme .icon-male,
-    .dark-theme .icon-male-white,
-    .dark-theme .icon-menu,
-    .dark-theme .icon-menu-black,
-    .dark-theme .icon-minus,
-    .dark-theme .icon-more,
-    .dark-theme .icon-more-gray-vertical,
-    .dark-theme .icon-moreinfo,
-    .dark-theme .icon-next,
-    .dark-theme .icon-notifications,
-    .dark-theme .icon-page,
-    .dark-theme .icon-password-hide,
-    .dark-theme .icon-password-hide-white,
-    .dark-theme .icon-password-show,
-    .dark-theme .icon-password-show-white,
-    .dark-theme .icon-pastname,
-    .dark-theme .icon-pause,
-    .dark-theme .icon-pause-fill,
-    .dark-theme .icon-play,
-    .dark-theme .icon-playgame,
-    .dark-theme .icon-plus,
-    .dark-theme .icon-regenerate,
-    .dark-theme .icon-right,
-    .dark-theme .icon-right-gray,
-    .dark-theme .icon-sandglass,
-    .dark-theme .icon-search,
-    .dark-theme .icon-settings,
-    .dark-theme .icon-slideshow,
-    .dark-theme .icon-sorting,
-    .dark-theme .icon-trash-bin,
-    .dark-theme .icon-unlocked,
-    .dark-theme .icon-up,
-    .dark-theme .icon-viewdetails {
-        filter: brightness(0) saturate(100%) invert(83%) sepia(16%)
-            saturate(438%) hue-rotate(178deg) brightness(87%) contrast(84%) !important;
-    }
-    .dark-theme .icon-default-economy-small,
-    .dark-theme .icon-robux-16x16,
-    .dark-theme .icon-robux-gold-16x16,
-    .dark-theme .icon-robux-gray-16x16,
-    .dark-theme .icon-robux-white-16x16 {
-        filter: brightness(0) saturate(100%) invert(83%) sepia(16%)
-            saturate(438%) hue-rotate(178deg) brightness(87%) contrast(84%) !important;
-    }
-    .dark-theme .icon-clanpoint,
-    .dark-theme .icon-default-branded,
-    .dark-theme .icon-favorite,
-    .dark-theme .icon-follow-game,
-    .dark-theme .icon-follow-game-gray,
-    .dark-theme .icon-leaderboard,
-    .dark-theme .icon-playerpoint,
-    .dark-theme .icon-robux,
-    .dark-theme .icon-robux-28x28,
-    .dark-theme .icon-robux-burst-banner,
-    .dark-theme .icon-robux-gold,
-    .dark-theme .icon-robux-gray,
-    .dark-theme .icon-robux-white {
-        filter: brightness(0) saturate(100%) invert(83%) sepia(16%)
-            saturate(438%) hue-rotate(178deg) brightness(87%) contrast(84%) !important;
-    }
+  body {
+    background-color: #0b0d16 !important;
+    color: #a5b6cf !important;
+  }
+  * {
+    font-family: "Space Mono", monospace !important;
+  }
+  .gotham-font div {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4em;
+    border-radius: 6px;
+  }
+  .dark-theme .content {
+    background-color: #0b0d16 !important;
+    color: #a5b6cf !important;
+  }
+  .game-main-content {
+    border-radius: 8px !important;
+  }
+  .dark-theme {
+    background-color: #0b0d16 !important;
+  }
+  .dark-theme .section-content {
+    border: 1px solid #0f111a !important;
+    background-color: #0d0f18 !important;
+    color: #fff;
+  }
+  .btr-game-button {
+    background-color: #1e2637 !important;
+    border-color: transparent !important;
+    color: #86aaec !important;
+  }
+  .dark-theme .btn-control-sm {
+    background-color: #0f111a !important;
+    border-color: transparent !important;
+    color: #a5b6cf !important;
+    border-radius: 8px;
+  }
+  .dark-theme .rbx-header {
+    background-color: #0b0d16 !important;
+    border: solid #111214;
+    border-top-width: medium;
+    border-right-width: medium;
+    border-bottom-width: medium;
+    border-left-width: medium;
+    border-width: 0 0 1px;
+    max-width: 1550px !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+  .age-bracket-label {
+    display: none !important;
+  }
+
+  .dark-theme .asset-thumb-container {
+    background-color: #0f111a !important;
+  }
+  .dark-theme .rbx-tabs-horizontal .rbx-tab .rbx-tab-heading.active {
+    color: #86aaec !important;
+    box-shadow: inset 0 -4px 0 0 #86aaec !important;
+  }
+  .chat-main {
+    box-shadow: none !important;
+  }
+  .dark-theme .chat-main {
+    background-color: #0d0f18 !important;
+  }
+  .dark-theme .section-content {
+    color: #a5b6cf !important;
+  }
+  .dark-theme .text,
+  .dark-theme .text-date-hint,
+  .dark-theme .text-default,
+  .dark-theme .text-description,
+  .dark-theme .text-footer,
+  .dark-theme .text-info,
+  .dark-theme .text-label,
+  .dark-theme .text-secondary,
+  .dark-theme p {
+    color: #a5b6cf !important;
+  }
+  .dark-theme .abp .BadAdButton:hover,
+  .dark-theme .text-alert,
+  .dark-theme .text-error,
+  .light-theme .abp .BadAdButton:hover,
+  .light-theme .text-alert,
+  .light-theme .text-error {
+    color: #dd6777 !important;
+  }
+  .dark-theme .chat-search {
+    background-color: rgba(255, 0, 0, 0.7);
+    border-color: hsla(0, 0%, 100%, 0.2);
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+    color: #bdbebe;
+    border-radius: 0px;
+  }
+  .dark-theme .game-card-container .game-card-thumb-container {
+    width: 140px !important;
+    height: 140px !important;
+  }
+  .game-card-container thumbnail-2d .game-card-thumb,
+  .game-card-thumb-container .game-card-thumb {
+    width: 140px !important;
+    height: 140px !important;
+  }
+  .navbar-left {
+    float: right !important;
+  }
+  .col-lg-3 {
+    width: 16% !important;
+  }
+  .dark-theme .rbx-tabs-vertical .category-tabs .menu-vertical {
+    background-color: #0d0f18 !important;
+    color: #fff;
+    border-radius: 6px !important;
+  }
+  .dark-theme .btn-growth-md {
+    background-color: #90ceaa !important;
+    border-color: #99d2b3 !important;
+    color: #0d0f18 !important;
+    border-radius: 8px !important;
+  }
+  .dark-theme .item-card-container .item-card-thumb-container {
+    background-color: #0f111a !important;
+  }
+  .icon-online {
+    background-color: #86aaec !important;
+    border-radius: 5px !important;
+  }
+  .icon-game {
+    background-color: #90ceaa !important;
+    border-radius: 69px !important;
+  }
+  .icon-studio {
+    background-color: #c296eb !important;
+    border-radius: 69px !important;
+  }
+  .icon-default-friendstatus,
+  .icon-game,
+  .icon-online,
+  .icon-studio {
+    background-image: none !important;
+  }
+  .dark-theme .friends-content .avatar-card-content {
+    background-color: #0f111a !important;
+  }
+  .dark-theme .avatar-card-container.disabled {
+    background-color: #0d0f18 !important;
+  }
+  .dark-theme .rbx-tab .rbx-tab-heading {
+    background-color: #0f111a !important;
+  }
+  .dark-theme .rbx-tabs-horizontal .nav-tabs {
+    background-color: #0d0f18 !important;
+  }
+  .dark-theme .input-field {
+    background-color: #0b0d16 !important;
+    border-color: #30363d !important;
+    color: #6e7681 !important;
+    border-radius: 6px !important;
+  }
+  .dark-theme .btn-toggle {
+    background-color: #a5b6cf !important;
+    color: #bdbebe;
+  }
+  .dark-theme .btn-toggle.on {
+    background-color: #86aaec !important;
+    border-radius: 2px !important;
+  }
+  .dark-theme .btn-primary-md {
+    background-color: #86aaec !important;
+    border-color: #86aaec !important;
+    color: #0f111a !important;
+    border-radius: 6px !important;
+  }
+  .btn-toggle .toggle-flip {
+    background-color: #0b0d16 !important;
+    border-radius: 16px !important;
+  }
+  .dark-theme .container-footer {
+    background-color: #0b0d16 !important;
+  }
+  .dark-theme .menu-vertical {
+    background-color: #0d0f18 !important;
+  }
+  .dark-theme .container-empty,
+  .dark-theme .section-content-off {
+    background-color: #0d0f18 !important;
+    color: #616b7b !important;
+  }
+  .btr-pager-holder input.btr-pager-cur {
+    background-color: rgba(17, 18, 20, 0.8) !important;
+    color: #86aaec !important;
+    border: 1px solid #86aaec !important;
+    border-radius: 16px !important;
+  }
+  .btr-pager-holder * {
+    background-color: #1e2637 !important;
+    border-radius: 16px !important;
+  }
+  .dark-theme .dropdown-menu {
+    background-color: #0d0f18 !important;
+    border: 1px solid #0f111a !important;
+  }
+  dark-theme .popover.bottom > .arrow,
+  .dark-theme .popover.bottom > .arrow::after {
+    border-bottom-color: transparent !important;
+  }
+  .dark-theme .avatar-container .avatar-card-image,
+  .dark-theme .avatar-container img {
+    background-color: #0f111a !important;
+  }
+  .dark-theme .border,
+  .dark-theme .border-bottom,
+  .dark-theme .border-left,
+  .dark-theme .border-right,
+  .dark-theme .border-top {
+    border-color: transparent !important;
+  }
+  .profile-avatar-left .enable-three-dee {
+    background-color: #86aaec !important;
+    border-color: #86aaec !important;
+    color: #0f111a !important;
+    border-radius: 6px !important;
+    border: none !important;
+    top: 5px !important;
+    right: 5px !important;
+  }
+  #games-carousel-page {
+    width: 1075px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .no-gutter-ads.logged-in .content {
+    width: 1075px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .dark-theme .remove-panel {
+    padding: 15px !important;
+  }
+  .container-main
+    .catalog-full-screen
+    .catalog-results
+    .item-cards-stackable
+    .item-card,
+  .container-main
+    .splash.catalog-full-screen
+    .catalog-results
+    .item-cards-stackable
+    .item-card {
+    width: 19% !important;
+    min-width: auto;
+  }
+  .dark-theme .avatar-card-btns {
+    background-color: #0d0f18 !important;
+  }
+  .dark-theme .avatar-card-btns .accept-friend {
+    background-color: #90ceaa !important;
+    border-color: #99d2b3 !important;
+    color: #0d0f18 !important;
+    border-radius: 6px !important;
+  }
+  .dark-theme .btn-secondary-md {
+    background-color: #0f111a !important;
+    border-color: transparent !important;
+    color: #a5b6cf !important;
+    border-radius: 6px !important;
+  }
+  .container-buttons .profile-view-selector {
+    background-color: #1e2637 !important;
+    border: none !important;
+    padding: 2px 15px !important;
+  }
+  .dark-theme .layer {
+    border: 1px solid #0f111a !important;
+    background-color: #0d0f18 !important;
+  }
+  .dark-theme .horizontal-scroller .scroller .spacer {
+    background-color: #0b0d16 !important;
+  }
+  .dark-theme .scroller {
+    background-color: #0d0f18 !important;
+  }
+  .dark-theme .table {
+    border: 1px solid #0f111a !important;
+    background-color: #0d0f18 !important;
+    border-radius: 8px !important;
+    color: #a5b6cf !important;
+  }
+
+  .dark-theme .rbx-tab .rbx-tab-heading {
+    background-color: transparent !important;
+  }
+  #horizontal-tabs {
+    border-radius: 8px !important;
+    background-color: #0d0f18 !important;
+    border: 1px solid #0f111a !important;
+  }
+
+  .add-friends-icon-container::before {
+    background-color: var(--dark-mode-shift-200) !important;
+  }
+
+  .css-4izgel-textIconRowText[data-sdui-text="true"] {
+    color: var(--dark-mode-content-emphasis) !important;
+  }
+
+  .react-chat-message-bubble-outgoing {
+    background-color: #86aaec !important;
+    color: #0f111a !important;
+  }
+
+  .profile-about .profile-social-networks .profile-social {
+    filter: var(--gnome-convert-icon-to-symbolic-hack-filter);
+    border-radius: 8px !important;
+  }
+  .dark-theme .btn-primary-lg {
+    background-color: #90ceaa !important;
+    border-color: #99d2b3 !important;
+    color: #0d0f18 !important;
+    border-radius: 8px !important;
+  }
+  .dark-theme .rbx-left-col {
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
+    border: 1px solid #0f111a !important;
+    background-color: #0d0f18 !important;
+    border-radius: 8px !important;
+    margin-left: 15px !important;
+  }
+  .dark-theme .menu-vertical .menu-option.active {
+    color: #a5b6cf !important;
+    background-color: transparent;
+    box-shadow: inset 4px 0 0 0 #c296eb !important;
+  }
+  .rbx-left-col li {
+    margin: 8px 0 !important;
+  }
+  .rbx-left-col ul {
+    padding: 5px 0 0 0px !important;
+  }
+  .rbx-left-col .rbx-scrollbar .left-col-list {
+    width: 125px;
+  }
+  .dark-theme .menu-vertical .menu-option {
+    color: #616b7b !important;
+  }
+  .dark-theme .rbx-left-col li .text-nav:active,
+  .dark-theme .rbx-left-col li .text-nav:link,
+  .dark-theme .rbx-left-col li .text-nav:visited {
+    display: inline-grid !important;
+    justify-items: center !important;
+    align-items: center !important;
+    width: 100% !important;
+  }
+  .dark-theme .profile-avatar-right .profile-avatar-mask {
+    border: 1px solid #0f111a !important;
+    background-color: #0d0f18 !important;
+  }
+  .profile-avatar-right .profile-avatar-mask {
+    padding: 20px 20px !important;
+  }
+  .profile-accoutrements-container
+    .profile-accoutrements-slider
+    .accoutrement-items-container {
+    width: 100%;
+  }
+  #profile-current-wearing-avatar .thumbnail-2d-container {
+    background-color: #0f111a !important;
+  }
+  .btr-profile .profile-stats-container {
+    border-top: 1px solid #0f111a !important;
+    border-bottom: 1px solid #0f111a !important;
+    margin-top: 10px;
+  }
+  .btr-profile .btr-header-status-parent {
+    display: block !important;
+    position: absolute !important;
+  }
+  .dark-theme .avatar-card-container {
+    background-color: #0d0f18 !important;
+    color: #a5b6cf !important;
+  }
+  .dark-theme .stack .stack-list .stack-row {
+    border: 1px solid #0f111a !important;
+    background-color: #0d0f18 !important;
+    color: #a5b6cf !important;
+    border-radius: 8px !important;
+  }
+  .dark-theme .thumbnail-2d-container {
+    background-color: #0d0f18 !important;
+  }
+  .dark-theme .catalog-content .search-options .category-section,
+  .dark-theme .catalog-content .search-options .filters-section {
+    border-bottom: 1px solid #0f111a !important;
+  }
+  .jss3 {
+    background-color: #0b0d16 !important;
+  }
+  .dark-theme .slide-item-container-right {
+    color: #a5b6cf !important;
+    border: none !important;
+    background-color: transparent !important;
+  }
+
+  .dark-theme .slide-switcher .slide-item-container .slide-item-container-left {
+    background: transparent !important;
+  }
+  .dark-theme .slide-switcher.games {
+    border: 1px solid #0f111a !important;
+    background-color: #0d0f18 !important;
+    border-radius: 8px;
+  }
+  .dark-theme .slide-item-container-right {
+    background-color: transparent !important;
+  }
+
+  .jss459 {
+    border: 1px solid #0f111a !important;
+    background-color: #0d0f18 !important;
+  }
+  .jss205 {
+    max-width: 1550px !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+  .jss202 {
+    border: 1px solid #0f111a !important;
+    background-color: #0d0f18 !important;
+    border-bottom-left-radius: 8px !important;
+    border-bottom-right-radius: 8px !important;
+  }
+  .hlist .list-item a {
+    display: grid !important;
+  }
+  .dark-theme .thumbnail-2d-container {
+    align-self: center;
+  }
+  .game-cards {
+    white-space: nowrap;
+    padding: 15px !important;
+    border: 1px solid #0f111a !important;
+    background-color: #0d0f18 !important;
+    border-radius: 8px !important;
+    display: flex !important;
+    justify-content: space-between !important;
+  }
+  .dark-theme .slide-switcher.groups {
+    background-color: transparent !important;
+  }
+  .dark-theme .game-card-container .game-card-name {
+    width: 140px !important;
+  }
+  .dark-theme .game-cards .game-card,
+  .light-theme .game-cards .game-card {
+    width: auto !important;
+  }
+  .game-cards .game-card {
+    padding: 0 7px 0 0 !important;
+  }
+  .rbx-left-col li button.text-nav {
+    display: block !important;
+  }
+  .rbx-left-col li .text-nav .font-header-2 {
+    display: block !important;
+    margin: 3px 0 3px 0 !important;
+    text-overflow: ellipsis !important;
+    width: 125px !important;
+    text-align: center !important;
+  }
+  .dark-theme .dialogs .dialog-container .dialog-header {
+    border: 1px solid #0f111a !important;
+    background-color: #0d0f18 !important;
+  }
+  .dark-theme .chat-container .chat-main .chat-header {
+    border: 1px solid #0f111a !important;
+    background-color: #0d0f18 !important;
+  }
+  .dark-theme .dialogs .dialog-container .dialog-body {
+    background-color: transparent !important;
+  }
+  .dark-theme .dialog-container {
+    background-color: #0d0f18 !important;
+  }
+  .dark-theme .dialog-container .dialog-input-container .dialog-input {
+    background-color: #0b0d16 !important;
+    border-color: transparent !important;
+    color: #a5b6cf !important;
+    border-radius: 8px !important;
+  }
+  .dark-theme .vlist .list-item {
+    border-color: transparent !important;
+  }
+  .section-content .badge-list {
+    display: flex !important;
+    justify-content: space-between !important;
+  }
+  #notifications-bell-badge.bell-red-badge {
+    background-color: #86aaec !important;
+    color: #0f111a !important;
+  }
+  .dark-theme .notification,
+  .dark-theme .notification-blue,
+  .dark-theme .notification-red {
+    background-color: #86aaec !important;
+    color: #0f111a !important;
+  }
+  .dark-theme .text-link,
+  .dark-theme .text-link.small,
+  .dark-theme .text-link.small:active,
+  .dark-theme .text-link.small:link,
+  .dark-theme .text-link.small:visited,
+  .dark-theme .text-link.xsmall,
+  .dark-theme .text-link.xsmall:active,
+  .dark-theme .text-link.xsmall:link,
+  .dark-theme .text-link.xsmall:visited,
+  .dark-theme .text-link.xxsmall,
+  .dark-theme .text-link.xxsmall:active,
+  .dark-theme .text-link.xxsmall:link,
+  .dark-theme .text-link.xxsmall:visited,
+  .dark-theme .text-link:active,
+  .dark-theme .text-link:hover,
+  .dark-theme .text-link:link,
+  .dark-theme .text-link:visited,
+  .dark-theme .text-name,
+  .dark-theme .text-name.small,
+  .dark-theme .text-name.small:active,
+  .dark-theme .text-name.small:link,
+  .dark-theme .text-name.small:visited,
+  .dark-theme .text-name.xsmall,
+  .dark-theme .text-name.xsmall:active,
+  .dark-theme .text-name.xsmall:link,
+  .dark-theme .text-name.xsmall:visited,
+  .dark-theme .text-name.xxsmall,
+  .dark-theme .text-name.xxsmall:active,
+  .dark-theme .text-name.xxsmall:link,
+  .dark-theme .text-name.xxsmall:visited,
+  .dark-theme .text-name:active,
+  .dark-theme .text-name:hover,
+  .dark-theme .text-name:link,
+  .dark-theme .text-name:visited,
+  .dark-theme .vlist .list-item .list-body .list-content a,
+  .dark-theme .vlist .list-item .list-body .list-content a.small,
+  .dark-theme .vlist .list-item .list-body .list-content a.small:active,
+  .dark-theme .vlist .list-item .list-body .list-content a.small:link,
+  .dark-theme .vlist .list-item .list-body .list-content a.small:visited,
+  .dark-theme .vlist .list-item .list-body .list-content a.xsmall,
+  .dark-theme .vlist .list-item .list-body .list-content a.xsmall:active,
+  .dark-theme .vlist .list-item .list-body .list-content a.xsmall:link,
+  .dark-theme .vlist .list-item .list-body .list-content a.xsmall:visited,
+  .dark-theme .vlist .list-item .list-body .list-content a.xxsmall,
+  .dark-theme .vlist .list-item .list-body .list-content a.xxsmall:active,
+  .dark-theme .vlist .list-item .list-body .list-content a.xxsmall:link,
+  .dark-theme .vlist .list-item .list-body .list-content a.xxsmall:visited,
+  .dark-theme .vlist .list-item .list-body .list-content a:active,
+  .dark-theme .vlist .list-item .list-body .list-content a:hover,
+  .dark-theme .vlist .list-item .list-body .list-content a:link,
+  .dark-theme .vlist .list-item .list-body .list-content a:visited,
+  .vlist .list-item .list-body .list-content .dark-theme a,
+  .vlist .list-item .list-body .list-content .dark-theme a.small,
+  .vlist .list-item .list-body .list-content .dark-theme a.small:active,
+  .vlist .list-item .list-body .list-content .dark-theme a.small:link,
+  .vlist .list-item .list-body .list-content .dark-theme a.small:visited,
+  .vlist .list-item .list-body .list-content .dark-theme a.xsmall,
+  .vlist .list-item .list-body .list-content .dark-theme a.xsmall:active,
+  .vlist .list-item .list-body .list-content .dark-theme a.xsmall:link,
+  .vlist .list-item .list-body .list-content .dark-theme a.xsmall:visited,
+  .vlist .list-item .list-body .list-content .dark-theme a.xxsmall,
+  .vlist .list-item .list-body .list-content .dark-theme a.xxsmall:active,
+  .vlist .list-item .list-body .list-content .dark-theme a.xxsmall:link,
+  .vlist .list-item .list-body .list-content .dark-theme a.xxsmall:visited,
+  .vlist .list-item .list-body .list-content .dark-theme a:active,
+  .vlist .list-item .list-body .list-content .dark-theme a:hover,
+  .vlist .list-item .list-body .list-content .dark-theme a:link,
+  .vlist .list-item .list-body .list-content .dark-theme a:visited {
+    color: #a5b6cf !important;
+  }
+  .no-gutter-ads .rbx-left-col .rbx-scrollbar,
+  .rbx-left-col .rbx-scrollbar {
+    width: 125px !important;
+  }
+  .no-gutter-ads .rbx-left-col,
+  .rbx-left-col {
+    width: 125px !important;
+  }
+  .rbx-left-col .rbx-scrollbar .left-col-list {
+    width: 125px !important;
+  }
+  .avatar-card-fullbody .avatar-card-image,
+  .avatar-card-fullbody .avatar-card-link,
+  .avatar .avatar-card-image,
+  .avatar .avatar-card-link {
+    border-radius: 100%;
+  }
+  .btn-common-play-game-lg span[class^="icon-"],
+  .btn-common-play-game-lg span[class^="icon-"]:hover,
+  a.btn-common-play-game-lg span[class^="icon-"],
+  a.btn-common-play-game-lg span[class^="icon-"]:hover,
+  button.btn-common-play-game-lg span[class^="icon-"],
+  button.btn-common-play-game-lg span[class^="icon-"]:hover {
+    filter: brightness(0) saturate(100%) invert(5%) sepia(10%) saturate(2493%)
+      hue-rotate(191deg) brightness(99%) contrast(96%) !important;
+  }
+  .dark-theme .icon-additem,
+  .dark-theme .icon-arrow-right-blue,
+  .dark-theme .icon-audio,
+  .dark-theme .icon-back,
+  .dark-theme .icon-bigplay,
+  .dark-theme .icon-bigplay-fill,
+  .dark-theme .icon-bigstop,
+  .dark-theme .icon-bigstop-fill,
+  .dark-theme .icon-brokenpage,
+  .dark-theme .icon-carousel-left,
+  .dark-theme .icon-carousel-right,
+  .dark-theme .icon-chat-gray,
+  .dark-theme .icon-check-selection,
+  .dark-theme .icon-checkmark,
+  .dark-theme .icon-checkmark-blue,
+  .dark-theme .icon-checkmark-on,
+  .dark-theme .icon-checkmark-white,
+  .dark-theme .icon-checkmark-white-bold,
+  .dark-theme .icon-clock,
+  .dark-theme .icon-close,
+  .dark-theme .icon-close-white,
+  .dark-theme .icon-copy,
+  .dark-theme .icon-default-generic,
+  .dark-theme .icon-down,
+  .dark-theme .icon-edit,
+  .dark-theme .icon-female,
+  .dark-theme .icon-female-white,
+  .dark-theme .icon-first-gray,
+  .dark-theme .icon-first-page,
+  .dark-theme .icon-games-carousel-left,
+  .dark-theme .icon-games-carousel-right,
+  .dark-theme .icon-globe,
+  .dark-theme .icon-grid,
+  .dark-theme .icon-home,
+  .dark-theme .icon-inactive,
+  .dark-theme .icon-last-gray,
+  .dark-theme .icon-last-page,
+  .dark-theme .icon-left,
+  .dark-theme .icon-left-gray,
+  .dark-theme .icon-locked,
+  .dark-theme .icon-logo-apple,
+  .dark-theme .icon-logo-win,
+  .dark-theme .icon-male,
+  .dark-theme .icon-male-white,
+  .dark-theme .icon-menu,
+  .dark-theme .icon-menu-black,
+  .dark-theme .icon-minus,
+  .dark-theme .icon-more,
+  .dark-theme .icon-more-gray-vertical,
+  .dark-theme .icon-moreinfo,
+  .dark-theme .icon-next,
+  .dark-theme .icon-notifications,
+  .dark-theme .icon-page,
+  .dark-theme .icon-password-hide,
+  .dark-theme .icon-password-hide-white,
+  .dark-theme .icon-password-show,
+  .dark-theme .icon-password-show-white,
+  .dark-theme .icon-pastname,
+  .dark-theme .icon-pause,
+  .dark-theme .icon-pause-fill,
+  .dark-theme .icon-play,
+  .dark-theme .icon-playgame,
+  .dark-theme .icon-plus,
+  .dark-theme .icon-regenerate,
+  .dark-theme .icon-right,
+  .dark-theme .icon-right-gray,
+  .dark-theme .icon-sandglass,
+  .dark-theme .icon-search,
+  .dark-theme .icon-settings,
+  .dark-theme .icon-slideshow,
+  .dark-theme .icon-sorting,
+  .dark-theme .icon-trash-bin,
+  .dark-theme .icon-unlocked,
+  .dark-theme .icon-up,
+  .dark-theme .icon-viewdetails {
+    filter: brightness(0) saturate(100%) invert(83%) sepia(16%) saturate(438%)
+      hue-rotate(178deg) brightness(87%) contrast(84%) !important;
+  }
+  .dark-theme .icon-default-economy-small,
+  .dark-theme .icon-robux-16x16,
+  .dark-theme .icon-robux-gold-16x16,
+  .dark-theme .icon-robux-gray-16x16,
+  .dark-theme .icon-robux-white-16x16 {
+    filter: brightness(0) saturate(100%) invert(83%) sepia(16%) saturate(438%)
+      hue-rotate(178deg) brightness(87%) contrast(84%) !important;
+  }
+  .dark-theme .icon-clanpoint,
+  .dark-theme .icon-default-branded,
+  .dark-theme .icon-favorite,
+  .dark-theme .icon-follow-game,
+  .dark-theme .icon-follow-game-gray,
+  .dark-theme .icon-leaderboard,
+  .dark-theme .icon-playerpoint,
+  .dark-theme .icon-robux,
+  .dark-theme .icon-robux-28x28,
+  .dark-theme .icon-robux-burst-banner,
+  .dark-theme .icon-robux-gold,
+  .dark-theme .icon-robux-gray,
+  .dark-theme .icon-robux-white {
+    filter: brightness(0) saturate(100%) invert(83%) sepia(16%) saturate(438%)
+      hue-rotate(178deg) brightness(87%) contrast(84%) !important;
+  }
 }
